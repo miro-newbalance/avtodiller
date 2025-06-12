@@ -1,0 +1,660 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Логотип */
+.logo img {
+    max-width: 150px;
+}
+
+/* Кнопка каталога */
+.catalog-button {
+    padding: 10px 15px;
+}
+
+/* Верхняя навигация */
+.top-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Контактная информация */
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+/* Иконка телефона */
+.phone-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Номера телефонов */
+.phone-numbers p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Нижний уровень шапки */
+.bottom-header {
+    background-color: #ccc;
+}
+
+/* Основное меню */
+.bottom-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Поле поиска */
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+/* Гамбургер */
+.navbar-toggler {
+    border: none;
+    font-size: 24px;
+    background: none;
+    cursor: pointer;
+}
+
+/* Иконка поиска */
+.search-icon {
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Мобильное меню */
+.mobile-nav a {
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Адаптация элементов */
+@media (max-width: 768px) {
+    .top-nav {
+        display: none;
+    }
+    .phone-numbers {
+        display: none;
+    }
+    .search-bar input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .search-bar input {
+        display: none;
+    }
+    .search-icon {
+        display: inline-block;
+    }
+    .catalog-button {
+        display: inline-block;
+    }
+}
+
+/* Секция промо */
+.promo {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+/* Изображение самосвала */
+.promo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Текстовый блок */
+.promo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Кнопка */
+.promo-button {
+    padding: 10px 20px;
+}
+
+/* Адаптация для планшетов и мобильных */
+@media (max-width: 768px) {
+    .promo {
+        padding: 15px;
+        text-align: center;
+    }
+    .promo h2 {
+        font-size: 22px;
+    }
+    .promo-button {
+        width: 100%;
+    }
+}
+/* Блок логотипов */
+.brand-logos {
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+/* Логотипы */
+.brand-logos img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    #hidden-logos {
+        display: none;
+    }
+}
+/* Блок с текстом и карточками */
+.info-section {
+    padding: 40px 0;
+}
+
+/* Левый текстовый блок */
+.info-text {
+    text-align: left;
+}
+
+.info-text h4 {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.info-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-text p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Список */
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.info-list strong {
+    font-size: 20px;
+    color: #000;
+    margin-right: 10px;
+}
+
+/* Карточки */
+.card {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card-button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Адаптация на мобильных */
+@media (max-width: 768px) {
+    .info-text {
+        text-align: center;
+    }
+}
+
+
+/* Основной блок с карточками */
+.cards-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Заголовок блока */
+.cards-header h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cards-header p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Контейнер карточек */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+    gap: 20px; /* Пространство между карточками */
+    justify-content: center;
+}
+
+/* Карточки */
+.card {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Изображения внутри карточек */
+.card img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Заголовок карточки */
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Описание карточки */
+.card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Кнопка */
+.card-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+/* Основной блок с карточками */
+.features-section {
+    padding: 40px 0;
+}
+
+/* Карточки */
+.feature-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Заголовок карточки */
+.feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Адаптация на мобильных — 2 карточки в ряд */
+@media (max-width: 576px) {
+    .col-6 {
+        width: 50%;
+        flex: 0 0 50%;
+    }
+}
+/* Сетка карточек */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 карточки в ряд */
+    gap: 20px;
+    max-width: 1000px;
+}
+
+/* Карточка */
+.feature-card {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Изображения */
+.feature-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Заголовки */
+.feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Описание */
+.feature-card p {
+    font-size: 16px;
+}
+
+.special-offers {
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Скрытие карточек на планшете и мобильных */
+.hidden-cards {
+    display: none;
+}
+
+/* Адаптивная кнопка "Показать ещё" */
+#show-more {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .hidden-cards {
+        display: none;
+    }
+    #show-more {
+        display: block;
+    }
+}
+
+/* Стиль кнопок */
+.offer-button {
+    background-color: #1c1b1b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.offer-button:hover {
+    background-color: #cc5500;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Отступ между рядами */
+.offers-grid {
+    row-gap: 50px;
+}
+/* Основной блок */
+.feedback-section {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+/* Контейнер */
+.feedback-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Контейнер формы */
+.feedback-form-container {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* Контейнер изображения */
+.feedback-image {
+    flex: 1;
+    max-width: 500px;
+    text-align: right;
+}
+
+.feedback-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Заголовки */
+.feedback-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.feedback-subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feedback-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Форма */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Группы ввода */
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group .icon {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Кнопка отправки */
+.submit-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: #333;
+}
+
+/* Чекбокс */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.checkbox-group input {
+    margin-right: 8px;
+}
+
+/* Адаптация для планшетов: изображение растягивается */
+@media (max-width: 992px) {
+    .feedback-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .feedback-image {
+        flex: 1;
+        width: 100%; /* Теперь картинка занимает всю ширину */
+        text-align: center;
+    }
+
+    .feedback-image img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover; /* Заполняем доступную область */
+    }
+}
+
+/* Скрытие изображения на мобильных */
+@media (max-width: 768px) {
+    .feedback-image {
+        display: none; /* Полное скрытие картинки */
+    }
+}
+/* Основной блок подвала */
+.footer {
+    background-color: #545454;
+    color: #fff;
+    padding: 30px 0;
+}
+
+/* Контейнер */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Логотип */
+.footer-logo {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Навигация */
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Информация */
+.footer-info {
+    font-size: 14px;
+}
+
+/* Адаптация для планшета */
+@media (max-width: 992px) {
+    .footer-nav ul {
+        justify-content: center;
+    }
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .footer-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+}
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
